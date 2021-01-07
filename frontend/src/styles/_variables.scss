@@ -1,0 +1,46 @@
+$bg: #040444;
+$dark: rgb(19, 28, 46);
+$purple: #7272A1;
+$second: #E8B62D;
+$light: #ECF6FF;
+$red: #FF6161;
+$gray: #8898AA;
+$white: #ffffffd9;
+$lightb: #8bb2d4;;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap&subset=latin-ext');
+@import "~vue-wysiwyg/dist/vueWysiwyg.css";
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500&display=swap&subset=latin-ext');
+
+.btn {
+    text-decoration: none;
+    background: #fff;
+    text-transform: uppercase;
+    letter-spacing: -.01rem;
+    color: $bg;
+    padding: .7rem 2rem;
+    font-weight: 700;
+    font-size: .85rem;
+    letter-spacing: .05rem;
+    border: none;
+    cursor: pointer;
+
+    &.btn--dark {
+        background: $bg;
+        color: #fff;
+    }
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+  }
+}
+@media (min-width: 1600px) { 
+.btn {
+  padding: .7rem 4rem;
+}
+}

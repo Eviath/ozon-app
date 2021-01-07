@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h1>Nowe zlecenie kontaktu z adresu e-mail <%= @order.email %>!</h1>
+<h4>Klient - <strong><%= @order.name %></strong></h4>
+
+<strong>Wiadomość:</strong>
+<p><%= @order.message %></p>
+</body>
+</html>
